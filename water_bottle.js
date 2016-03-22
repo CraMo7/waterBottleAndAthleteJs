@@ -5,10 +5,12 @@ var waterBottle = {
   fill: function(){
     this.volume = this.maximum;
   },
-  drink: function(){
-    var drinkAmount = 10;
-    if (this.volume >= drinkAmount){
-    this.volume -= drinkAmount;
+  drink: function(quantity){
+    if (quantity == undefined) {
+      quantity = 10;
+    }
+    if (this.volume >= quantity){
+    this.volume -= quantity;
     }
     else {
       this.volume = this.minimum;

@@ -1,5 +1,7 @@
 var assert = require("chai").assert;
 var athlete = require("../athlete.js")
+var bottle = require("../water_bottle.js")
+
 
 describe("Athlete", function(){
   it("should have hydration attribute which starts at 100.", function(){
@@ -20,6 +22,9 @@ describe("Athlete", function(){
     assert.equal(0, athlete.distanceCovered);
   });
   it("should be able to increase hydration by drinking from water bottle", function(){
-    assert.equal(expected, actual);
+    bottle.fill();
+    athlete.drink(bottle);
+    assert.equal(10, athlete.hydration);
+    assert.equal(90, bottle.volume);
   });
 });

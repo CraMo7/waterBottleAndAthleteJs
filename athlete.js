@@ -10,6 +10,12 @@ var athlete = {
       this.distanceCovered += this.hydration/10
       this.hydration = 0;
     }
+  },
+  drink: function(bottle, quantity){
+    if (bottle.volume >= 10){
+      bottle.drink(quantity);
+      this.hydration += 10;
+    }
   }
 };
 

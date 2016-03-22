@@ -3,6 +3,7 @@ var bottle = require("../water_bottle.js")
 
 describe("Water Bottle", function(){
   it("should be empty at start.", function(){
+    bottle.empty();
     assert.equal(0, bottle.volume);
   });
   it("should be 100 when filled.", function(){
