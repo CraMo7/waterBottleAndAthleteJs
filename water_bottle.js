@@ -13,8 +13,10 @@ var waterBottle = {
       this.volume -= quantity;
     }
     else {
-      this.volume = this.minimum;
+      quantity = this.volume;
+      this.volume = this.minimum;   
     }
+    return quantity;
   },
   empty: function() {
     this.volume = this.minimum;

@@ -15,15 +15,16 @@ var athlete = {
     if (quantity === undefined) {
       quantity = 10;
     }
-    if (bottle.volume >= quantity){
-      bottle.drink(quantity);
-      this.hydration += quantity;
-    }
-    else {
-      quantity = bottle.volume
-      bottle.drink(quantity);
-      this.hydration += quantity;
-    }
+    this.hydration += bottle.drink(quantity); // that replaces the whole if statement below:
+    // if (bottle.volume >= quantity){
+    //   bottle.drink(quantity);
+    //   this.hydration += quantity;
+    // }
+    // else {
+    //   quantity = bottle.volume
+    //   bottle.drink(quantity);
+    //   this.hydration += quantity;
+    // }
   }
 };
 
