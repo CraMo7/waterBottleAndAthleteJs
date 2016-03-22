@@ -27,4 +27,11 @@ describe("Athlete", function(){
     assert.equal(10, athlete.hydration);
     assert.equal(90, bottle.volume);
   });
+  it("should be able to pass quantity to drink into athlete.drink(bottle, quantity)", function(){
+    athlete.hydration = 0;
+    bottle.fill();
+    athlete.drink(bottle, 5);
+    assert.equal(95, bottle.volume);
+    assert.equal(5, athlete.hydration);
+  });
 });

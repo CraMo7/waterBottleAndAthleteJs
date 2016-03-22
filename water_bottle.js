@@ -6,7 +6,7 @@ var waterBottle = {
     this.volume = this.maximum;
   },
   drink: function(quantity){
-    if (quantity == undefined) {
+    if (quantity === undefined) {
       quantity = 10;
     }
     if (this.volume >= quantity){

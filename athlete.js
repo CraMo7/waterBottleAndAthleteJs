@@ -12,15 +12,15 @@ var athlete = {
     }
   },
   drink: function(bottle, quantity){
-    if (bottle.volume >= 10){
+    if (quantity === undefined) {
+      quantity = 10;
+    }
+    if (bottle.volume >= quantity){
       bottle.drink(quantity);
-      this.hydration += 10;
+      this.hydration += quantity;
     }
   }
 };
-
-
-
 
 // //////////////////////////////////////////////////
 module.exports = athlete;
