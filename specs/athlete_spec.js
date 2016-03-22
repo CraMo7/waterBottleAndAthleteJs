@@ -12,6 +12,7 @@ describe("Athlete", function(){
     athlete.run();
     assert.equal(1, athlete.distanceCovered);
     assert.equal(90, athlete.hydration);
+    
   });
   it("should not move when running dehydrated: hydration at 0.", function(){
     assert.equal(expected, actual);
