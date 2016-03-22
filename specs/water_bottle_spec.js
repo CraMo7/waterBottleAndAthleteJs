@@ -14,6 +14,11 @@ describe("Water Bottle", function(){
     bottle.drink();
     assert.equal(90, bottle.volume);
   })
+  it("should not drop below 0 when drunk.", function(){
+    bottle.fill();
+    bottle.drink();
+    assert.equal(90, bottle.volume);
+  })
 });
 
 

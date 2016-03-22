@@ -6,7 +6,11 @@ var waterBottle = {
     this.volume = this.max;
   },
   drink: function(){
+    if ()
     this.volume -= 10;
+  },
+  empty: function() {
+    this.volume = 0;
   }
 };
 
