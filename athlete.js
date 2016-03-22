@@ -1,9 +1,9 @@
 var athlete = {
-  
+  hydration: 100
 };
 
 
 
 
 // //////////////////////////////////////////////////
-module.exports = waterBottle;
+module.exports = athlete;
