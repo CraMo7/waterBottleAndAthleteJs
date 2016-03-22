@@ -37,6 +37,7 @@ describe("Athlete", function(){
   it("should automatically downscale quantity to drink all remaining water and hydrate appropriately if quantity to drink is more than what remains", function(){
     bottle.volume = 3;
     athlete.hydration = 50;
+    athlete.drink(bottle);
     assert.equal(0, bottle.volume);
     assert.equal(53, athlete.hydration);
   });
