@@ -1,16 +1,21 @@
 var waterBottle = {
   volume: 0,
-  max: 100,
-  min: 0,
+  maximum: 100,
+  minimum: 0,
   fill: function(){
-    this.volume = this.max;
+    this.volume = this.maximum;
   },
   drink: function(){
-    if ()
-    this.volume -= 10;
+    var drinkAmount = 10;
+    if (this.volume >= drinkAmount){
+    this.volume -= drinkAmount;
+    }
+    else {
+      this.volume = this.minimum;
+    }
   },
   empty: function() {
-    this.volume = 0;
+    this.volume = this.minimum;
   }
 };
 
