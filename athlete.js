@@ -1,5 +1,6 @@
 var athlete = {
-  hydration: 100
+  hydration: 100,
+  distanceCovered: 0
 };
 
 
