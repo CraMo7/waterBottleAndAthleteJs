@@ -23,6 +23,10 @@ describe("Water Bottle", function(){
     bottle.drink();
     assert.equal(0, bottle.volume);
   })
+  it("should return the amount drunk", function(){
+    bottle.fill();
+    assert.equal(10, bottle.drink(10));
+  })
 });
 
 

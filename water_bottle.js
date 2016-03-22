@@ -10,7 +10,7 @@ var waterBottle = {
       quantity = 10;
     }
     if (this.volume >= quantity){
-    this.volume -= quantity;
+      this.volume -= quantity;
     }
     else {
       this.volume = this.minimum;
