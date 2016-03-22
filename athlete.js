@@ -19,6 +19,11 @@ var athlete = {
       bottle.drink(quantity);
       this.hydration += quantity;
     }
+    else {
+      quantity = bottle.volume
+      bottle.drink(quantity);
+      this.hydration += quantity;
+    }
   }
 };
 
